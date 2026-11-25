@@ -1,0 +1,122 @@
+<section id="admin-felulet" class="scroll-mt-28 space-y-8" aria-labelledby="admin-title">
+  <div class="flex flex-col gap-4 border-b border-vigado-gray pb-5 sm:flex-row sm:items-end sm:justify-between">
+    <div>
+      <span class="mb-2 inline-block rounded-md bg-[#111111] px-3 py-1 text-xs font-bold tracking-wider text-white uppercase">Adminisztráció</span>
+      <h2 id="admin-title" class="text-2xl font-extrabold tracking-tight sm:text-3xl">Műsorkezelés, árazás és forgalom</h2>
+      <p class="mt-1 max-w-3xl text-sm text-[#444444]">Központi irányítópult a termek, jegyárak, értékesítési csatornák és felhasználók kezeléséhez.</p>
+    </div>
+    <span class="rounded-lg border border-vigado-gray bg-white px-3.5 py-2 font-mono text-xs">Adminisztrátor: <strong>Kovács Anna</strong></span>
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+    <article class="space-y-1 rounded-xl border border-vigado-gray bg-white p-5 sm:p-6">
+      <span class="text-xs font-bold tracking-wider text-[#444444] uppercase">Mai összbevétel</span>
+      <p class="font-mono text-2xl font-extrabold text-vigado-green sm:text-3xl">482 500 Ft</p>
+      <p class="pt-1 text-xs text-[#444444]">Online: <strong>64%</strong> · Pénztár: <strong>36%</strong></p>
+    </article>
+    <article class="space-y-1 rounded-xl border border-vigado-gray bg-white p-5 sm:p-6">
+      <span class="text-xs font-bold tracking-wider text-[#444444] uppercase">Eladott jegyek</span>
+      <p class="font-mono text-2xl font-extrabold sm:text-3xl">198 db</p>
+      <p class="pt-1 text-xs text-[#444444]">Minden helyszín és előadás összesítve</p>
+    </article>
+    <article class="space-y-1 rounded-xl border border-vigado-gray bg-white p-5 sm:p-6">
+      <span class="text-xs font-bold tracking-wider text-[#444444] uppercase">Aktív foglalások</span>
+      <p class="font-mono text-2xl font-extrabold text-vigado-burgundy sm:text-3xl">24 db</p>
+      <p class="pt-1 text-xs text-[#444444]">Pénztári átvételre váró helyek</p>
+    </article>
+  </div>
+
+  <div class="grid grid-cols-1 gap-6 xl:grid-cols-2">
+    <article class="space-y-5 rounded-xl border border-vigado-gray bg-white p-5 sm:p-7">
+      <h3 class="text-lg font-extrabold">Többszintű árazás konfigurátor</h3>
+      <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+        <div class="rounded-lg border border-vigado-gray bg-vigado-bg p-3.5"><span class="block text-[10px] font-bold text-[#444444] uppercase">Előadás alapár</span><strong class="mt-1 block font-mono text-base">2 000 Ft</strong></div>
+        <div class="rounded-lg border border-vigado-green bg-vigado-bg p-3.5"><span class="block text-[10px] font-bold text-vigado-green uppercase">I. szektor ára</span><strong class="mt-1 block font-mono text-base text-vigado-green">2 500 Ft</strong></div>
+        <div class="rounded-lg border border-vigado-burgundy bg-vigado-bg p-3.5"><span class="block text-[10px] font-bold text-vigado-burgundy uppercase">Egyedi székár · A3</span><strong class="mt-1 block font-mono text-base text-vigado-burgundy">3 000 Ft</strong></div>
+      </div>
+      <div class="space-y-1 rounded-lg border-l-4 border-vigado-green bg-vigado-bg p-4 text-xs">
+        <strong class="block">Árazási sorrend: székár &gt; szektorár &gt; alapár</strong>
+        <p class="text-[#444444]">Elsőként az egyedi székár érvényesül; ennek hiányában a szektorár, végül az előadás alapára.</p>
+      </div>
+    </article>
+
+    <article class="space-y-5 rounded-xl border border-vigado-gray bg-white p-5 sm:p-7">
+      <h3 class="text-lg font-extrabold">Szék letiltása / feloldása</h3>
+      <div class="flex flex-col gap-4 rounded-lg border border-vigado-gray bg-vigado-bg p-4 sm:flex-row sm:items-center sm:justify-between">
+        <div class="space-y-1">
+          <span class="inline-block rounded bg-vigado-gray px-2 py-0.5 font-mono text-xs font-bold">Nagyterem · C6 ×</span>
+          <strong class="block text-sm">C6 – Műszaki hiba miatt letiltva</strong>
+          <span class="block text-xs text-[#444444]">A tiltás a nyilvános felületre és a pénztárra is kiterjed.</span>
+        </div>
+        <button type="button" class="shrink-0 rounded-lg bg-vigado-green px-4 py-2.5 text-xs font-extrabold text-white">Tiltás feloldása</button>
+      </div>
+      <div class="flex flex-wrap items-center justify-between gap-3 text-xs">
+        <span>Új szék tiltása: <strong class="font-mono">II. Szektor · D2</strong></span>
+        <button type="button" class="rounded-lg bg-vigado-burgundy px-3.5 py-2 font-bold text-white">Kijelölt szék letiltása</button>
+      </div>
+    </article>
+  </div>
+
+  <article class="space-y-5 rounded-xl border border-vigado-gray bg-white p-5 sm:p-7">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <h3 class="text-lg font-extrabold">Helyszínek, termek és műsor-időpontok</h3>
+        <p class="mt-0.5 text-xs text-[#444444]">Aktív helyszínek: Vigadó Főépület · Nagyterem és Kamaraterem · Kertmozi Udvar</p>
+      </div>
+      <button type="button" class="self-start rounded-lg bg-vigado-green px-4 py-2 text-xs font-bold text-white sm:self-auto">+ Új előadás rögzítése</button>
+    </div>
+    <div class="overflow-x-auto rounded-xl border border-vigado-gray">
+      <table class="w-full min-w-[650px] border-collapse text-left text-xs">
+        <caption class="sr-only">Előadások, termek, időpontok és műveletek</caption>
+        <thead class="bg-vigado-bg font-extrabold text-[#111111] uppercase">
+          <tr class="border-b border-vigado-gray"><th class="px-4 py-3">Műfaj</th><th class="px-4 py-3">Előadás címe</th><th class="px-4 py-3">Helyszín · terem</th><th class="px-4 py-3">Időpontok</th><th class="px-4 py-3">Művelet</th></tr>
+        </thead>
+        <tbody class="divide-y divide-vigado-gray">
+          <tr><td class="px-4 py-3.5"><span class="rounded bg-vigado-green px-2 py-1 font-mono text-[10px] font-bold text-white">DRÁMA</span></td><td class="px-4 py-3.5 font-bold">A völgy csendje</td><td class="px-4 py-3.5">Vigadó · Nagyterem</td><td class="px-4 py-3.5 font-mono">Ma 17:30, 20:00</td><td class="px-4 py-3.5"><button type="button" class="rounded bg-vigado-bg px-3 py-1.5 font-bold">Szerkesztés</button></td></tr>
+          <tr class="bg-vigado-bg/40"><td class="px-4 py-3.5"><span class="rounded bg-vigado-burgundy px-2 py-1 font-mono text-[10px] font-bold text-white">DOKU</span></td><td class="px-4 py-3.5 font-bold">Csillagok a Hortobágy felett</td><td class="px-4 py-3.5">Vigadó · Kamaraterem</td><td class="px-4 py-3.5 font-mono">Ma 17:30, 19:30</td><td class="px-4 py-3.5"><button type="button" class="rounded bg-vigado-bg px-3 py-1.5 font-bold">Szerkesztés</button></td></tr>
+          <tr><td class="px-4 py-3.5"><span class="rounded bg-[#111111] px-2 py-1 font-mono text-[10px] font-bold text-white">GÁLA</span></td><td class="px-4 py-3.5 font-bold">Tavaszi Gálakoncert</td><td class="px-4 py-3.5">Vigadó · Nagyterem</td><td class="px-4 py-3.5 font-mono">Péntek, szombat 19:00</td><td class="px-4 py-3.5"><button type="button" class="rounded bg-vigado-bg px-3 py-1.5 font-bold">Szerkesztés</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="space-y-5 rounded-xl border border-vigado-gray bg-white p-5 sm:p-7">
+    <div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+      <h3 class="text-lg font-extrabold">Foglalások és jegyeladások napló</h3>
+      <div class="flex flex-wrap gap-2 text-xs font-semibold">
+        <span class="rounded-lg border border-vigado-gray bg-vigado-bg px-3 py-1.5">Időszak: Ma</span>
+        <span class="rounded-lg border border-vigado-gray bg-vigado-bg px-3 py-1.5">Helyszín: Összes</span>
+        <span class="rounded-lg bg-[#111111] px-3 py-1.5 text-white">Csatorna: Összes</span>
+      </div>
+    </div>
+    <div class="overflow-x-auto rounded-xl border border-vigado-gray">
+      <table class="w-full min-w-[760px] border-collapse text-left text-xs">
+        <caption class="sr-only">Jegyeladások és foglalások naplója</caption>
+        <thead class="bg-vigado-bg font-extrabold text-[#111111] uppercase"><tr class="border-b border-vigado-gray"><th class="px-4 py-3">Azonosító</th><th class="px-4 py-3">Előadás</th><th class="px-4 py-3">Székek</th><th class="px-4 py-3">Összeg</th><th class="px-4 py-3">Csatorna</th><th class="px-4 py-3">Állapot</th></tr></thead>
+        <tbody class="divide-y divide-vigado-gray">
+          <tr><td class="px-4 py-3.5 font-mono font-bold text-vigado-green">JEGY-99412</td><td class="px-4 py-3.5"><strong class="block">A völgy csendje</strong><span class="font-mono text-[#444444]">Ma · 20:00</span></td><td class="px-4 py-3.5 font-mono font-bold">A3, A4</td><td class="px-4 py-3.5 font-mono font-extrabold">5 500 Ft</td><td class="px-4 py-3.5">Online</td><td class="px-4 py-3.5"><span class="rounded bg-vigado-green px-2.5 py-1 font-bold text-white">Eladva</span></td></tr>
+          <tr class="bg-vigado-bg/40"><td class="px-4 py-3.5 font-mono font-bold text-vigado-burgundy">FOG-2026-8492</td><td class="px-4 py-3.5"><strong class="block">A völgy csendje</strong><span class="font-mono text-[#444444]">Ma · 20:00</span></td><td class="px-4 py-3.5 font-mono font-bold">A2</td><td class="px-4 py-3.5 font-mono font-extrabold">2 500 Ft</td><td class="px-4 py-3.5">Online</td><td class="px-4 py-3.5"><span class="rounded border border-vigado-burgundy bg-white px-2.5 py-1 font-bold text-vigado-burgundy">Foglalva</span></td></tr>
+          <tr><td class="px-4 py-3.5 font-mono font-bold text-vigado-green">JEGY-99413</td><td class="px-4 py-3.5"><strong class="block">Csillagok a Hortobágy felett</strong><span class="font-mono text-[#444444]">Ma · 19:30</span></td><td class="px-4 py-3.5 font-mono font-bold">B1, B2</td><td class="px-4 py-3.5 font-mono font-extrabold">3 600 Ft</td><td class="px-4 py-3.5">Pénztár</td><td class="px-4 py-3.5"><span class="rounded bg-vigado-green px-2.5 py-1 font-bold text-white">Eladva</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="space-y-5 rounded-xl border border-vigado-gray bg-white p-5 sm:p-7">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <h3 class="text-lg font-extrabold">Felhasználókezelés</h3>
+      <button type="button" class="self-start rounded-lg bg-vigado-green px-4 py-2 text-xs font-bold text-white sm:self-auto">+ Új fiók létrehozása</button>
+    </div>
+    <div class="overflow-x-auto rounded-xl border border-vigado-gray">
+      <table class="w-full min-w-[650px] border-collapse text-left text-xs">
+        <caption class="sr-only">Rendszerfelhasználók és fiókstátuszuk</caption>
+        <thead class="bg-vigado-bg font-extrabold text-[#111111] uppercase"><tr class="border-b border-vigado-gray"><th class="px-4 py-3">Név</th><th class="px-4 py-3">E-mail cím</th><th class="px-4 py-3">Szerepkör</th><th class="px-4 py-3">Státusz</th></tr></thead>
+        <tbody class="divide-y divide-vigado-gray">
+          <tr><td class="px-4 py-3.5 font-bold">Kovács Anna</td><td class="px-4 py-3.5 font-mono">kovacs.anna@vigado-kisujszallas.hu</td><td class="px-4 py-3.5"><span class="rounded bg-[#111111] px-2.5 py-1 font-bold text-white">Adminisztrátor</span></td><td class="px-4 py-3.5"><span class="rounded bg-vigado-green px-2.5 py-1 font-bold text-white">Aktív</span></td></tr>
+          <tr class="bg-vigado-bg/40"><td class="px-4 py-3.5 font-bold">Nagy Péter</td><td class="px-4 py-3.5 font-mono">nagy.peter@vigado-kisujszallas.hu</td><td class="px-4 py-3.5"><span class="rounded bg-vigado-burgundy px-2.5 py-1 font-bold text-white">Pénztáros</span></td><td class="px-4 py-3.5"><span class="rounded bg-vigado-green px-2.5 py-1 font-bold text-white">Aktív</span></td></tr>
+          <tr><td class="px-4 py-3.5 font-bold text-[#444444]">Szabó Eszter</td><td class="px-4 py-3.5 font-mono text-[#444444]">szabo.eszter@vigado-kisujszallas.hu</td><td class="px-4 py-3.5"><span class="rounded bg-vigado-gray px-2.5 py-1 font-bold">Pénztáros</span></td><td class="px-4 py-3.5"><span class="rounded bg-vigado-gray px-2.5 py-1 font-bold">Inaktív</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+</section>

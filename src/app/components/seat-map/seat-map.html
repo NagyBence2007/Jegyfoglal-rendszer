@@ -1,5 +1,5 @@
 <section
-  class="space-y-7 rounded-xl border border-vigado-gray bg-white p-5 sm:p-8 lg:p-10"
+  class="space-y-6 rounded-xl border border-vigado-gray bg-white p-6 sm:p-8"
   aria-labelledby="seat-map-title"
 >
   <div
@@ -78,7 +78,7 @@
     </li>
   </ul>
 
-  <div class="overflow-x-auto rounded-xl border border-vigado-gray bg-vigado-bg p-4 sm:p-6">
+  <div class="surface-inset overflow-x-auto bg-vigado-bg">
     <div class="mx-auto min-w-[34rem] max-w-3xl space-y-7">
       <div class="space-y-1.5 text-center">
         <div class="h-3 rounded-t-md bg-[#111111]"></div>
@@ -89,10 +89,7 @@
 
       <div class="space-y-5">
         @for (sector of sectors; track sector.label) {
-          <section
-            class="rounded-xl border border-vigado-gray bg-white p-4 sm:p-5"
-            [attr.aria-label]="sector.label"
-          >
+          <section class="surface-inset bg-white" [attr.aria-label]="sector.label">
             <div
               class="mb-4 flex flex-wrap items-center justify-between gap-2 border-b border-vigado-gray pb-2.5"
             >

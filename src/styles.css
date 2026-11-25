@@ -9,6 +9,47 @@
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
+@layer components {
+  .surface-panel,
+  .surface-muted {
+    border: 1px solid var(--color-vigado-gray);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+  }
+
+  .surface-panel {
+    background-color: #ffffff;
+  }
+
+  .surface-muted {
+    background-color: var(--color-vigado-bg);
+  }
+
+  .surface-inset {
+    border: 1px solid var(--color-vigado-gray);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+@layer base {
+  app-navbar,
+  app-program,
+  app-seat-map,
+  app-booking-checkout,
+  app-cashier,
+  app-admin {
+    display: block;
+  }
+}
+
+@media (min-width: 40rem) {
+  .surface-panel,
+  .surface-muted {
+    padding: 1.5rem;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,4 +66,3 @@ button,
 input {
   font: inherit;
 }
-@import 'tailwindcss';

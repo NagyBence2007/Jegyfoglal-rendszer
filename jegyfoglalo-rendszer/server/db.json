@@ -1,0 +1,210 @@
+{
+  "venues": [
+    {
+      "id": 1,
+      "name": "Kisújszállási Vigadó",
+      "city": "Kisújszállás",
+      "address": "Kisújszállás, Fő utca 1."
+    },
+    {
+      "id": 2,
+      "name": "Vigadó Nyári Mozi",
+      "city": "Kisújszállás",
+      "address": "Kisújszállás, Kossuth tér 5."
+    }
+  ],
+  "halls": [
+    {
+      "id": 1,
+      "venueId": 1,
+      "name": "Nagyterem",
+      "rows": 6,
+      "seatsPerRow": 10
+    },
+    {
+      "id": 2,
+      "venueId": 1,
+      "name": "Kamaraterem",
+      "rows": 4,
+      "seatsPerRow": 8
+    },
+    {
+      "id": 3,
+      "venueId": 2,
+      "name": "Kertmozi",
+      "rows": 5,
+      "seatsPerRow": 12
+    }
+  ],
+  "sectors": [
+    { "id": 1, "hallId": 1, "name": "Elsők", "rowFrom": 1, "rowTo": 2, "priceCategory": "standard" },
+    { "id": 2, "hallId": 1, "name": "Közép", "rowFrom": 3, "rowTo": 4, "priceCategory": "premium" },
+    { "id": 3, "hallId": 1, "name": "Hátsó", "rowFrom": 5, "rowTo": 6, "priceCategory": "standard" },
+    { "id": 4, "hallId": 2, "name": "Kamara", "rowFrom": 1, "rowTo": 4, "priceCategory": "standard" },
+    { "id": 5, "hallId": 3, "name": "Kert", "rowFrom": 1, "rowTo": 5, "priceCategory": "standard" }
+  ],
+  "prices": [
+    { "id": 1, "priceCategory": "standard", "label": "Normál", "amount": 1800, "currency": "HUF" },
+    { "id": 2, "priceCategory": "premium", "label": "Prémium", "amount": 2400, "currency": "HUF" }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "A nagy utazás",
+      "type": "film",
+      "description": "Családi kalandfilm egy kisváros fiatal felfedezőiről.",
+      "durationMinutes": 112,
+      "posterUrl": "https://picsum.photos/seed/utazas/300/450",
+      "active": true
+    },
+    {
+      "id": 2,
+      "title": "Éjféli expressz",
+      "type": "film",
+      "description": "Feszült thriller egy éjszakai vonatúton.",
+      "durationMinutes": 98,
+      "posterUrl": "https://picsum.photos/seed/expressz/300/450",
+      "active": true
+    },
+    {
+      "id": 3,
+      "title": "A kékszakállú herceg vára",
+      "type": "előadás",
+      "description": "Színházi előadás a helyi társulat előadásában.",
+      "durationMinutes": 85,
+      "posterUrl": "https://picsum.photos/seed/heceg/300/450",
+      "active": true
+    }
+  ],
+  "screenings": [
+    { "id": 1, "movieId": 1, "hallId": 1, "startsAt": "2026-12-05T17:00:00", "active": true },
+    { "id": 2, "movieId": 1, "hallId": 1, "startsAt": "2026-12-05T19:30:00", "active": true },
+    { "id": 3, "movieId": 2, "hallId": 2, "startsAt": "2026-12-06T18:00:00", "active": true },
+    { "id": 4, "movieId": 3, "hallId": 1, "startsAt": "2026-12-12T19:00:00", "active": true },
+    { "id": 5, "movieId": 2, "hallId": 3, "startsAt": "2026-12-13T20:00:00", "active": true }
+  ],
+  "seats": [
+    { "id": 1, "screeningId": 1, "sectorId": 1, "row": 1, "number": 1, "status": "free" },
+    { "id": 2, "screeningId": 1, "sectorId": 1, "row": 1, "number": 2, "status": "free" },
+    { "id": 3, "screeningId": 1, "sectorId": 1, "row": 1, "number": 3, "status": "reserved" },
+    { "id": 4, "screeningId": 1, "sectorId": 1, "row": 1, "number": 4, "status": "sold" },
+    { "id": 5, "screeningId": 1, "sectorId": 1, "row": 1, "number": 5, "status": "blocked" },
+    { "id": 6, "screeningId": 1, "sectorId": 2, "row": 3, "number": 1, "status": "free" },
+    { "id": 7, "screeningId": 1, "sectorId": 2, "row": 3, "number": 2, "status": "free" },
+    { "id": 8, "screeningId": 1, "sectorId": 2, "row": 3, "number": 3, "status": "sold" },
+    { "id": 9, "screeningId": 1, "sectorId": 2, "row": 4, "number": 1, "status": "free" },
+    { "id": 10, "screeningId": 1, "sectorId": 2, "row": 4, "number": 2, "status": "free" },
+    { "id": 11, "screeningId": 3, "sectorId": 4, "row": 1, "number": 1, "status": "free" },
+    { "id": 12, "screeningId": 3, "sectorId": 4, "row": 1, "number": 2, "status": "free" },
+    { "id": 13, "screeningId": 3, "sectorId": 4, "row": 1, "number": 3, "status": "free" },
+    { "id": 14, "screeningId": 3, "sectorId": 4, "row": 2, "number": 1, "status": "reserved" }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin Aladár",
+      "email": "admin@vigado.hu",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Pénztáros Piroska",
+      "email": "penztaros@vigado.hu",
+      "password": "penztar123",
+      "role": "cashier"
+    },
+    {
+      "id": 3,
+      "name": "Látogató Lajos",
+      "email": "lajos@example.com",
+      "password": "latogato123",
+      "role": "visitor"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "reservationCode": "FOG-2026-0001",
+      "screeningId": 1,
+      "seatIds": [3],
+      "userId": 3,
+      "customerName": "Látogató Lajos",
+      "customerEmail": "lajos@example.com",
+      "channel": "online",
+      "status": "active",
+      "createdAt": "2026-11-20T10:15:00"
+    },
+    {
+      "id": 2,
+      "reservationCode": "FOG-2026-0002",
+      "screeningId": 3,
+      "seatIds": [14],
+      "userId": 2,
+      "customerName": "Kovács Béla",
+      "customerEmail": null,
+      "channel": "cashier",
+      "status": "active",
+      "createdAt": "2026-11-21T14:40:00"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "paymentCode": "PAY-2026-0001",
+      "orderId": 1,
+      "amount": 1800,
+      "currency": "HUF",
+      "cardLast4": "4242",
+      "status": "success",
+      "message": "Sikeres fizetés",
+      "createdAt": "2026-11-22T16:05:00"
+    },
+    {
+      "id": 2,
+      "paymentCode": "PAY-2026-0002",
+      "orderId": 2,
+      "amount": 2400,
+      "currency": "HUF",
+      "cardLast4": "0002",
+      "status": "failed",
+      "message": "A kártya elutasítva",
+      "createdAt": "2026-11-22T16:20:00"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "screeningId": 1,
+      "seatIds": [4],
+      "userId": 3,
+      "totalAmount": 1800,
+      "currency": "HUF",
+      "channel": "online",
+      "status": "paid",
+      "createdAt": "2026-11-22T16:04:00"
+    },
+    {
+      "id": 2,
+      "screeningId": 1,
+      "seatIds": [8],
+      "userId": 3,
+      "totalAmount": 2400,
+      "currency": "HUF",
+      "channel": "online",
+      "status": "payment_failed",
+      "createdAt": "2026-11-22T16:19:00"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "ticketCode": "JEGY-2026-0001",
+      "orderId": 1,
+      "screeningId": 1,
+      "seatId": 4,
+      "price": 1800,
+      "issuedAt": "2026-11-22T16:05:00"
+    }
+  ]
+}

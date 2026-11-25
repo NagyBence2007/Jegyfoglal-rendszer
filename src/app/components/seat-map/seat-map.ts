@@ -13,6 +13,12 @@ interface SeatRow {
   seats: Seat[];
 }
 
+interface SeatSector {
+  label: string;
+  priceLabel: string;
+  rows: SeatRow[];
+}
+
 @Component({
   selector: 'app-seat-map',
   templateUrl: './seat-map.html',
@@ -22,38 +28,50 @@ export class SeatMapComponent {
   readonly selectedSeats = input.required<string[]>();
   readonly selectedSeatsChange = output<string[]>();
 
-  protected readonly rows: SeatRow[] = [
+  protected readonly sectors: SeatSector[] = [
     {
-      label: 'A sor',
-      seats: [
-        { id: 'A1', price: 2500, status: 'available' },
-        { id: 'A2', price: 2500, status: 'reserved' },
-        { id: 'A3', price: 3000, status: 'available' },
-        { id: 'A4', price: 2500, status: 'available' },
-        { id: 'A5', price: 2500, status: 'sold' },
-        { id: 'A6', price: 2500, status: 'available' },
+      label: 'I. Szektor · Kiemelt földszint',
+      priceLabel: '2 500 Ft · A3: 3 000 Ft',
+      rows: [
+        {
+          label: 'A sor',
+          seats: [
+            { id: 'A1', price: 2500, status: 'available' },
+            { id: 'A2', price: 2500, status: 'reserved' },
+            { id: 'A3', price: 3000, status: 'available' },
+            { id: 'A4', price: 2500, status: 'available' },
+            { id: 'A5', price: 2500, status: 'sold' },
+            { id: 'A6', price: 2500, status: 'available' },
+          ],
+        },
+        {
+          label: 'B sor',
+          seats: [
+            { id: 'B1', price: 2500, status: 'available' },
+            { id: 'B2', price: 2500, status: 'available' },
+            { id: 'B3', price: 2500, status: 'sold' },
+            { id: 'B4', price: 2500, status: 'available' },
+            { id: 'B5', price: 2500, status: 'reserved' },
+            { id: 'B6', price: 2500, status: 'available' },
+          ],
+        },
       ],
     },
     {
-      label: 'B sor',
-      seats: [
-        { id: 'B1', price: 2500, status: 'available' },
-        { id: 'B2', price: 2500, status: 'available' },
-        { id: 'B3', price: 2500, status: 'sold' },
-        { id: 'B4', price: 2500, status: 'available' },
-        { id: 'B5', price: 2500, status: 'reserved' },
-        { id: 'B6', price: 2500, status: 'available' },
-      ],
-    },
-    {
-      label: 'C sor',
-      seats: [
-        { id: 'C1', price: 2000, status: 'available' },
-        { id: 'C2', price: 2000, status: 'available' },
-        { id: 'C3', price: 2000, status: 'available' },
-        { id: 'C4', price: 2000, status: 'sold' },
-        { id: 'C5', price: 2000, status: 'available' },
-        { id: 'C6', price: 2000, status: 'blocked' },
+      label: 'II. Szektor · Standard földszint',
+      priceLabel: 'Alapár: 2 000 Ft',
+      rows: [
+        {
+          label: 'C sor',
+          seats: [
+            { id: 'C1', price: 2000, status: 'available' },
+            { id: 'C2', price: 2000, status: 'available' },
+            { id: 'C3', price: 2000, status: 'available' },
+            { id: 'C4', price: 2000, status: 'sold' },
+            { id: 'C5', price: 2000, status: 'available' },
+            { id: 'C6', price: 2000, status: 'blocked' },
+          ],
+        },
       ],
     },
   ];
@@ -75,7 +93,8 @@ export class SeatMapComponent {
   }
 
   protected seatClasses(seat: Seat): string {
-    const base = 'min-w-0 rounded-lg px-1 py-2 text-center transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#111111]';
+    const base =
+      'min-w-0 rounded-lg px-1 py-2 text-center transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#111111]';
 
     if (this.isSelected(seat)) {
       return `${base} bg-vigado-green text-white ring-2 ring-[#111111]`;

@@ -1,34 +1,80 @@
-<section class="space-y-7 rounded-xl border border-vigado-gray bg-white p-5 sm:p-8 lg:p-10" aria-labelledby="seat-map-title">
-  <div class="flex flex-col gap-3 border-b border-vigado-gray pb-5 md:flex-row md:items-center md:justify-between">
+<section
+  class="space-y-7 rounded-xl border border-vigado-gray bg-white p-5 sm:p-8 lg:p-10"
+  aria-labelledby="seat-map-title"
+>
+  <div
+    class="flex flex-col gap-3 border-b border-vigado-gray pb-5 md:flex-row md:items-center md:justify-between"
+  >
     <div>
-      <span class="text-xs font-bold tracking-wider text-vigado-green uppercase">Kiválasztott előadás teremnézete</span>
-      <h2 id="seat-map-title" class="mt-1 text-xl font-extrabold text-[#111111] sm:text-2xl">A völgy csendje · Nagyterem · Ma 20:00</h2>
+      <span class="text-xs font-bold tracking-wider text-vigado-green uppercase"
+        >Kiválasztott előadás teremnézete</span
+      >
+      <h2 id="seat-map-title" class="mt-1 text-xl font-extrabold text-[#111111] sm:text-2xl">
+        A völgy csendje · Nagyterem · Ma 20:00
+      </h2>
     </div>
     <p class="rounded-lg border border-vigado-gray bg-vigado-bg px-4 py-2.5 font-mono text-xs">
-      Alapár: <strong>2 000 Ft</strong> · I. Szektor: <strong class="text-vigado-green">2 500 Ft</strong> · A3: <strong class="text-vigado-burgundy">3 000 Ft</strong>
+      Alapár: <strong>2 000 Ft</strong> · I. Szektor:
+      <strong class="text-vigado-green">2 500 Ft</strong> · A3:
+      <strong class="text-vigado-burgundy">3 000 Ft</strong>
     </p>
   </div>
 
-  <ul class="grid grid-cols-1 gap-3 text-xs sm:grid-cols-2 xl:grid-cols-5" aria-label="Ülőhelyek jelmagyarázata">
+  <ul
+    class="grid grid-cols-1 gap-3 text-xs sm:grid-cols-2 xl:grid-cols-5"
+    aria-label="Ülőhelyek jelmagyarázata"
+  >
     <li class="flex items-center gap-3 rounded-lg border border-vigado-gray bg-vigado-bg p-3">
-      <span class="flex h-8 w-8 items-center justify-center rounded border-2 border-vigado-green bg-white font-mono font-bold text-vigado-green">✓</span>
-      <span><strong class="block">Szabad hely</strong><span class="text-[#444444]">Kiválasztható</span></span>
+      <span
+        class="flex h-8 w-8 items-center justify-center rounded border-2 border-vigado-green bg-white font-mono font-bold text-vigado-green"
+        >✓</span
+      >
+      <span
+        ><strong class="block">Szabad hely</strong
+        ><span class="text-[#444444]">Kiválasztható</span></span
+      >
     </li>
     <li class="flex items-center gap-3 rounded-lg border border-vigado-gray bg-vigado-bg p-3">
-      <span class="flex h-8 w-8 items-center justify-center rounded bg-vigado-green font-mono font-bold text-white">✓</span>
-      <span><strong class="block">Kiválasztva</strong><span class="text-[#444444]">Zöld + pipa</span></span>
+      <span
+        class="flex h-8 w-8 items-center justify-center rounded bg-vigado-green font-mono font-bold text-white"
+        >✓</span
+      >
+      <span
+        ><strong class="block">Kiválasztva</strong
+        ><span class="text-[#444444]">Zöld + pipa</span></span
+      >
     </li>
     <li class="flex items-center gap-3 rounded-lg border border-vigado-gray bg-vigado-bg p-3">
-      <span class="flex h-8 w-8 items-center justify-center rounded border-2 border-vigado-burgundy bg-white font-mono font-bold text-vigado-burgundy">F</span>
-      <span><strong class="block">Foglalt</strong><span class="text-[#444444]">Nem választható</span></span>
+      <span
+        class="flex h-8 w-8 items-center justify-center rounded border-2 border-vigado-burgundy bg-white font-mono font-bold text-vigado-burgundy"
+        >F</span
+      >
+      <span
+        ><strong class="block">Foglalt</strong
+        ><span class="text-[#444444]">Nem választható</span></span
+      >
     </li>
     <li class="flex items-center gap-3 rounded-lg border border-vigado-gray bg-vigado-bg p-3">
-      <span class="flex h-8 w-8 items-center justify-center rounded bg-vigado-burgundy font-mono font-bold text-white">E</span>
-      <span><strong class="block">Eladott</strong><span class="text-[#444444]">Nem választható</span></span>
+      <span
+        class="flex h-8 w-8 items-center justify-center rounded bg-vigado-burgundy font-mono font-bold text-white"
+        >E</span
+      >
+      <span
+        ><strong class="block">Eladott</strong
+        ><span class="text-[#444444]">Nem választható</span></span
+      >
     </li>
-    <li class="flex items-center gap-3 rounded-lg border border-vigado-gray bg-vigado-bg p-3 sm:col-span-2 xl:col-span-1">
-      <span class="flex h-8 w-8 items-center justify-center rounded bg-vigado-gray font-mono font-bold text-[#111111]">×</span>
-      <span><strong class="block">Letiltott</strong><span class="text-[#444444]">Nem választható</span></span>
+    <li
+      class="flex items-center gap-3 rounded-lg border border-vigado-gray bg-vigado-bg p-3 sm:col-span-2 xl:col-span-1"
+    >
+      <span
+        class="flex h-8 w-8 items-center justify-center rounded bg-vigado-gray font-mono font-bold text-[#111111]"
+        >×</span
+      >
+      <span
+        ><strong class="block">Letiltott</strong
+        ><span class="text-[#444444]">Nem választható</span></span
+      >
     </li>
   </ul>
 
@@ -36,37 +82,76 @@
     <div class="mx-auto min-w-[34rem] max-w-3xl space-y-7">
       <div class="space-y-1.5 text-center">
         <div class="h-3 rounded-t-md bg-[#111111]"></div>
-        <span class="font-mono text-xs font-bold tracking-widest text-[#333333] uppercase">Vászon / színpad</span>
+        <span class="font-mono text-xs font-bold tracking-widest text-[#333333] uppercase"
+          >Vászon / színpad</span
+        >
       </div>
 
       <div class="space-y-5">
-        <div class="rounded-xl border border-vigado-gray bg-white p-4 sm:p-5">
-          <div class="mb-4 flex flex-wrap items-center justify-between gap-2 border-b border-vigado-gray pb-2.5">
-            <span class="text-xs font-extrabold tracking-wider text-vigado-green uppercase">I. Szektor · Kiemelt földszint</span>
-            <span class="font-mono text-xs font-bold text-vigado-burgundy">2 500 Ft · A3: 3 000 Ft</span>
-          </div>
-          @for (row of rows; track row.label) {
-            <div class="mb-3 flex items-center gap-3 last:mb-0">
-              <span class="w-12 shrink-0 font-mono text-xs font-bold">{{ row.label }}</span>
-              <div class="grid flex-1 grid-cols-6 gap-1.5 sm:gap-2.5">
-                @for (seat of row.seats; track seat.id) {
-                  <button
-                    type="button"
-                    [class]="seatClasses(seat)"
-                    [disabled]="seat.status !== 'available'"
-                    [attr.aria-label]="seat.id + ', ' + seatDescription(seat) + ', ' + formatPrice(seat.price)"
-                    [attr.aria-pressed]="isSelected(seat)"
-                    (click)="toggleSeat(seat)"
-                  >
-                    <span class="block font-mono text-[11px] font-bold sm:text-xs">{{ seat.id }}{{ isSelected(seat) ? ' ✓' : seat.status === 'reserved' ? ' · F' : seat.status === 'sold' ? ' · E' : seat.status === 'blocked' ? ' ×' : '' }}</span>
-                    <span class="mt-0.5 block text-[9px] sm:text-[10px]">{{ seat.status === 'reserved' ? 'Foglalt' : seat.status === 'sold' ? 'Eladott' : seat.status === 'blocked' ? 'Letiltva' : formatPrice(seat.price) }}</span>
-                  </button>
-                }
-              </div>
+        @for (sector of sectors; track sector.label) {
+          <section
+            class="rounded-xl border border-vigado-gray bg-white p-4 sm:p-5"
+            [attr.aria-label]="sector.label"
+          >
+            <div
+              class="mb-4 flex flex-wrap items-center justify-between gap-2 border-b border-vigado-gray pb-2.5"
+            >
+              <span class="text-xs font-extrabold tracking-wider text-vigado-green uppercase">{{
+                sector.label
+              }}</span>
+              <span class="font-mono text-xs font-bold text-vigado-burgundy">{{
+                sector.priceLabel
+              }}</span>
             </div>
-          }
-        </div>
-        <p class="text-center text-xs text-[#444444]">Szabad hely kiválasztásához kattintson a székre. A foglalt és eladott helyek nem választhatók.</p>
+            @for (row of sector.rows; track row.label) {
+              <div class="mb-3 flex items-center gap-3 last:mb-0">
+                <span class="w-12 shrink-0 font-mono text-xs font-bold">{{ row.label }}</span>
+                <div class="grid flex-1 grid-cols-6 gap-1.5 sm:gap-2.5">
+                  @for (seat of row.seats; track seat.id) {
+                    <button
+                      type="button"
+                      [class]="seatClasses(seat)"
+                      [disabled]="seat.status !== 'available'"
+                      [attr.aria-label]="
+                        seat.id + ', ' + seatDescription(seat) + ', ' + formatPrice(seat.price)
+                      "
+                      [attr.aria-pressed]="isSelected(seat)"
+                      (click)="toggleSeat(seat)"
+                    >
+                      <span class="block font-mono text-[11px] font-bold sm:text-xs"
+                        >{{ seat.id
+                        }}{{
+                          isSelected(seat)
+                            ? ' ✓'
+                            : seat.status === 'reserved'
+                              ? ' · F'
+                              : seat.status === 'sold'
+                                ? ' · E'
+                                : seat.status === 'blocked'
+                                  ? ' ×'
+                                  : ''
+                        }}</span
+                      >
+                      <span class="mt-0.5 block text-[9px] sm:text-[10px]">{{
+                        seat.status === 'reserved'
+                          ? 'Foglalt'
+                          : seat.status === 'sold'
+                            ? 'Eladott'
+                            : seat.status === 'blocked'
+                              ? 'Letiltva'
+                              : formatPrice(seat.price)
+                      }}</span>
+                    </button>
+                  }
+                </div>
+              </div>
+            }
+          </section>
+        }
+        <p class="text-center text-xs text-[#444444]">
+          Szabad hely kiválasztásához kattintson a székre. A foglalt és eladott helyek nem
+          választhatók.
+        </p>
       </div>
     </div>
   </div>
